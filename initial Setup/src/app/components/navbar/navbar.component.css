@@ -1,0 +1,14 @@
+.navbar {
+    border-bottom: 1px solid #37a406;
+    padding: .1rem .3rem;
+    color:#37a406;
+}
+
+.nav-link, .dropdown-item {
+    color: rgba(44, 138, 2, .7)!important;
+}
+
+.dropdown-menu {
+    border: none!important; 
+    border-radius: none!important; 
+}

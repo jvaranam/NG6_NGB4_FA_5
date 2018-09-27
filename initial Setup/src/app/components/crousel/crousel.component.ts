@@ -12,7 +12,8 @@ export class CrouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  	this.images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  	//this.images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  	this.images = ["./assets/img/vision.jpg","./assets/img/mission.jpg","./assets/img/strategy.jpg"]
   }
 
 }

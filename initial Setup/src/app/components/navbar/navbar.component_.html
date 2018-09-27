@@ -1,0 +1,115 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+	<div class="container">
+		<a class="navbar-brand" (click)="onLogo()">
+	    <img src="assets/img/logo.jpg" class="d-none d-lg-block d-xl-block" width="155" height="97" alt="Logo">
+			<img src="assets/img/logo_mob.jpg" class="d-block d-md-block d-lg-none d-xl-none" width="123" height="77" alt="Logo">
+	  </a>
+	  <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse flex-column align-items-end">
+      <div class="navbar-nav mb-lg-0">
+        <ul class="navbar-nav flex-row ml-auto">
+          <li class="nav-item"><a class="nav-link px-2 icoFacebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.lourdesmathachurchgurugram.com&amp;title=Lourdes Matha Church Gurugram - Dioces of Faridabad" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li class="nav-item"><a class="nav-link px-2 icoGoogle" target="_blank" href="https://plus.google.com/share?url=http://www.lourdesmathachurchgurugram.com"><i class="fab fa-google-plus"></i></a></li>
+          <li class="nav-item"><a class="nav-link px-2 icoLinkedin" href="https://api.whatsapp.com/send?text=http://bit.ly/2virzuR"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#events">Events</a>
+        </li> -->
+        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">Our Activities</a>
+          <div class="dropdown-menu" role="menu">
+            <!-- <a class="dropdown-item js-scroll-trigger" href="#events">Past Events</a>
+            <a class="dropdown-item js-scroll-trigger" href="#catechism">Catechism</a>
+            <a class="dropdown-item js-scroll-trigger" href="#mathruvedi">Mathruvedi</a>
+            <a class="dropdown-item js-scroll-trigger" href="#pithruvedi">Pithruvedi</a>
+            <a class="dropdown-item js-scroll-trigger" href="#angelsArmy">Angels Army</a>
+            <a class="dropdown-item js-scroll-trigger" href="#dsym">DSYM</a>
+            <a class="dropdown-item js-scroll-trigger" href="#jesusYouth">Jesus Youth</a>
+            <a class="dropdown-item js-scroll-trigger" href="#altarServer">Altar Server</a>
+            <a class="dropdown-item js-scroll-trigger" href="#familyUnits">Family Units</a>
+            <a class="dropdown-item js-scroll-trigger" href="#parishCouncil">Parish Council</a> -->
+            <a class="dropdown-item js-scroll-trigger" href="#video">Past Events</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Catechism</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Mathruvedi</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Pithruvedi</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Angels Army</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">DSYM</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Jesus Youth</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Altar Server</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Family Units</a>
+            <a class="dropdown-item js-scroll-trigger" href="#video">Parish Council</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#massTimings">Mass Timings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#downloads">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+	    <!-- <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">who we are</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">what we do</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">resources</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">impact</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">join us</a>
+	      </li> -->
+	      <!-- <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" id="id01" (click)="isNavbarCollapsed1 = !isNavbarCollapsed1">Files</a>
+	        <div class="dropdown-menu" [ngbCollapse]="isNavbarCollapsed1">
+	          <a class="dropdown-item" href="#">HTML</a>
+	          <a class="dropdown-item" href="#">TS</a>
+	          <a class="dropdown-item" href="#">JS</a>
+	        </div>
+
+	        //https://embed.plnkr.co/plunk/xH6VJo
+
+	        //https://medium.com/@tiboprea/build-a-responsive-bootstrap-4-navbar-in-angular-5-without-jquery-c59ad35b007
+	      </li> -->
+	    <!-- </ul> -->
+	  </div>
+	</div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+  <a class="navbar-brand" href="#">Angular</a>
+  <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Files</a>
+        <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+          <a class="dropdown-item" href="#">HTML</a>
+          <a class="dropdown-item" href="#">TS</a>
+          <a class="dropdown-item" href="#">JS</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse flex-column align-items-end" [ngClass]="{ 'show': navbarOpen }">
+ -->
